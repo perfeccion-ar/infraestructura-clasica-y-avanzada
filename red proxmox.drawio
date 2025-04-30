@@ -1,0 +1,259 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.14">
+  <diagram name="Página-1" id="JTSzyHEqCJwY1uf2J2Gt">
+    <mxGraphModel dx="1877" dy="552" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2PcU3GDxiOa5zPf2A5ZC-4" value="Kubernetes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" parent="1" vertex="1">
+          <mxGeometry x="400" y="680" width="420" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="2PcU3GDxiOa5zPf2A5ZC-1" value="Playground padawans&lt;div&gt;Bunker4&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="400" y="100" width="420" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-12" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="-390" y="110" width="10" height="980" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-51" value="Solo CTs / VMs de&lt;div&gt;servicio internos,&lt;/div&gt;&lt;div&gt;CI/CD,&amp;nbsp;&lt;/div&gt;&lt;div&gt;Tools, Browsers internos,&amp;nbsp;&lt;/div&gt;&lt;div&gt;Winbox, y servidores menores no clusterizados, etc&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-8" y="520" width="366" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-52" value="DMZ, Zona de borde&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Dejan pasar a la VLAN 151&lt;/div&gt;&lt;div&gt;solo ssh tuneleado&lt;/div&gt;&lt;div&gt;o proxean ellos solo 80 internamente&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Por arquitectura, no hay 443 adentro, eso&amp;nbsp;&lt;/div&gt;&lt;div&gt;lo maneja el nginx-proxy-manager&lt;/div&gt;&lt;div&gt;con Let&#39;s Encrypt o Cloudflare)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="-190" y="100" width="550" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-53" value="CT 103 bastion arch&lt;div&gt;10.10.150.8&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-150" y="390" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-54" value="Router MKT" style="sketch=0;points=[[0.5,0,0],[1,0.5,0],[0.5,1,0],[0,0.5,0],[0.145,0.145,0],[0.8555,0.145,0],[0.855,0.8555,0],[0.145,0.855,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=router;fillColor=#FAFAFA;strokeColor=#005073;" parent="1" vertex="1">
+          <mxGeometry x="-460" y="305" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-56" value="CT 100 testvlan3&lt;div&gt;ubuntu 22.04&lt;div&gt;10.10.153.2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Revisar DNS con Lautaro&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="462" y="120" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="cOpwre1l_TY29OTWhIVw-14" target="pRibz36Krdpza1N9PtJQ-52" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-369" y="330" as="sourcePoint" />
+            <mxPoint x="-230" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-16" value="VLAN 150&lt;br&gt;Red Laboratorio&lt;br&gt;&lt;font style=&quot;color: rgb(255, 6, 6);&quot;&gt;Sacar SSH directos&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pRibz36Krdpza1N9PtJQ-58" vertex="1" connectable="0">
+          <mxGeometry x="-0.2471" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.004;entryY=0.458;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="cOpwre1l_TY29OTWhIVw-14" target="pRibz36Krdpza1N9PtJQ-51" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-305" y="620" />
+              <mxPoint x="-30" y="620" />
+              <mxPoint x="-30" y="662" />
+            </Array>
+            <mxPoint x="-320" y="180" as="sourcePoint" />
+            <mxPoint x="67.5" y="616" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-61" value="VLAN 151&lt;div&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;10.10.151.0/24&lt;br&gt;&quot;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(236, 236, 236); font-size: 12px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;red contenedores&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;permitir nat hacia afuera&lt;/span&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 19, 19);&quot;&gt;pero sacar ssh directo&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 19, 19);&quot;&gt;y dibujar aquí los pasos desde el bastion&lt;/font&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pRibz36Krdpza1N9PtJQ-60" vertex="1" connectable="0">
+          <mxGeometry x="0.4769" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pRibz36Krdpza1N9PtJQ-54" target="U1CDGiFiFmAiaz6NKcIj-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-640" y="635.3589838486225" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-680" y="330" />
+              <mxPoint x="-680" y="630" />
+              <mxPoint x="-690" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="pRibz36Krdpza1N9PtJQ-80" target="pRibz36Krdpza1N9PtJQ-54" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-80" value="Router Movistar" style="sketch=0;points=[[0.5,0,0],[1,0.5,0],[0.5,1,0],[0,0.5,0],[0.145,0.145,0],[0.8555,0.145,0],[0.855,0.8555,0],[0.145,0.855,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=router;fillColor=#FAFAFA;strokeColor=#005073;" parent="1" vertex="1">
+          <mxGeometry x="-620" y="180" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-83" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.742;entryY=-0.065;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#FF0000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="pRibz36Krdpza1N9PtJQ-86" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-557.1" y="73.25" as="sourcePoint" />
+            <mxPoint x="-580.0000000000001" y="179.99999999999977" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-84" value="179.41.3.71:10223" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pRibz36Krdpza1N9PtJQ-83" vertex="1" connectable="0">
+          <mxGeometry x="0.7084" y="-5" relative="1" as="geometry">
+            <mxPoint x="-15" y="-25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-86" value="" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-560" y="40" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-88" value="192.168.1.0/24" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-515" y="170" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-89" value="192.168.1.42:10223" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-560" y="285" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-90" value="ether1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-495" y="270" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-91" value="192.168.1.1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-640" y="255" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pRibz36Krdpza1N9PtJQ-100" value="CT 102&amp;nbsp;&lt;div&gt;nginx-proxy-manager&lt;/div&gt;&lt;div&gt;Archlinux&lt;div&gt;10.10.150.7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 67, 0);&quot;&gt;Puerto de administración&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 67, 0);&quot;&gt;81, solo desde adentro,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 67, 0);&quot;&gt;desde VM 105,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 67, 0);&quot;&gt;lubuntu-tools&lt;/font&gt;&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-140" y="110" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="-208" y="850" width="567.5" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-6" value="CT 106 testvlan&lt;div&gt;ubuntu 22.04&lt;div&gt;192.168.89.52&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Ej, un Rails, un Streamlit&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-140" y="860" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-14" value="Proxmox&lt;div&gt;eno1 → vmbr0 192.168.1.25&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="-350" y="110" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pRibz36Krdpza1N9PtJQ-54" target="cOpwre1l_TY29OTWhIVw-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-370" y="330" as="sourcePoint" />
+            <mxPoint x="-385" y="315" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-370" y="330" />
+              <mxPoint x="-370" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.001;entryY=0.467;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="cOpwre1l_TY29OTWhIVw-14" target="cOpwre1l_TY29OTWhIVw-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-200" y="670" as="sourcePoint" />
+            <mxPoint x="-150" y="620" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-330" y="985" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-18" value="&lt;span style=&quot;font-size: 12px; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;Servidores internos para la escuela&lt;/span&gt;&lt;div style=&quot;font-size: 12px; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;¿Sin marca de VLAN → obtienen 192.168.89.x?&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cOpwre1l_TY29OTWhIVw-17" vertex="1" connectable="0">
+          <mxGeometry x="0.7774" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-19" value="CT 107 testvlan2&lt;div&gt;ubuntu 22.04&lt;div&gt;10.10.151.2&lt;/div&gt;&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="40" y="530" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-20" value="VM 105 lubuntu-tools&lt;div&gt;ubuntu 24.04&lt;/div&gt;&lt;div&gt;10.10.151.3 -&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;raro,&lt;span style=&quot;background-color: transparent;&quot;&gt;&amp;nbsp;llega bien al mkt, pero por 192.168.89.22&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="210" y="720" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-22" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="-750" y="610" width="370" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-25" value="VM 300 Ainsophic&lt;div&gt;Alma 9.5&lt;div&gt;192.168.89.87&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 29, 29);&quot;&gt;Migrarlo a VLAN 151, y renatearle los puertos desde el mkt&lt;/font&gt;&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="110" y="860" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-26" value="VM 200 k8s-ctrl&lt;div&gt;ubuntu 24.04&lt;div&gt;192.168.89.196&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 29, 29);&quot;&gt;Migrarlo a otra VLAN 152&lt;/font&gt;&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="460" y="715" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cOpwre1l_TY29OTWhIVw-27" value="VM 201 k8s-node&lt;div&gt;ubuntu 24.04&lt;div&gt;ip?&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 29, 29);&quot;&gt;Migrarlo a VLAN: 152&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 29, 29);&quot;&gt;Guest not running&lt;/font&gt;&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="660" y="715" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Mikrotik&lt;/h1&gt;&lt;p&gt;- eth1 wan: 192.168.1.42&lt;/p&gt;&lt;p&gt;- bridge ether2-5:&lt;/p&gt;&lt;p&gt;&amp;nbsp; - 192.168.89.22/24&lt;/p&gt;&lt;p&gt;VLANs:&amp;nbsp;&lt;/p&gt;&lt;p&gt;- 192.168.150.1/24&lt;/p&gt;&lt;p&gt;- 192.168.151.1/24&lt;/p&gt;&lt;p&gt;Wifi&lt;/p&gt;&lt;p&gt;Campseim-administración&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-603" y="340" width="190" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pRibz36Krdpza1N9PtJQ-54" target="U1CDGiFiFmAiaz6NKcIj-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-450" y="730" as="sourcePoint" />
+            <mxPoint x="-470" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-435" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-7" value="Campuseimsur&lt;div&gt;ip que entrega?&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="-490" y="710" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-8" value="Campuseim-buffet" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="-780" y="180" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pRibz36Krdpza1N9PtJQ-80" target="U1CDGiFiFmAiaz6NKcIj-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-700" y="330" as="sourcePoint" />
+            <mxPoint x="-650" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-10" value="Switch Lab&lt;div&gt;Al bridge&lt;/div&gt;&lt;div&gt;192.168.89.0/24&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="-730" y="650" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-13" value="Sopalajo&lt;div&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;ip?&lt;/font&gt;&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;" parent="1" vertex="1">
+          <mxGeometry x="-758" y="1010" width="28.000000000000004" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-14" value="Switch Secretaría" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="-790" y="810" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-16" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="U1CDGiFiFmAiaz6NKcIj-10" target="U1CDGiFiFmAiaz6NKcIj-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="530" as="sourcePoint" />
+            <mxPoint x="-630" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.542;exitY=0.988;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.381;entryY=-0.067;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="U1CDGiFiFmAiaz6NKcIj-14" target="U1CDGiFiFmAiaz6NKcIj-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-680" y="740" as="sourcePoint" />
+            <mxPoint x="-680" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-20" value="Switch Bedelía" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="-570" y="830" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1CDGiFiFmAiaz6NKcIj-10" target="U1CDGiFiFmAiaz6NKcIj-20" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-590" y="800" as="sourcePoint" />
+            <mxPoint x="-540" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f1vZXrpiklLHV_rhEHN4-1" value="CT ??? p&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;i-hole, &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(255, 0, 0), rgb(255, 255, 255));&quot;&gt;propuesto&lt;/font&gt;&lt;/span&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="210" y="530" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2PcU3GDxiOa5zPf2A5ZC-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="cOpwre1l_TY29OTWhIVw-14" target="2PcU3GDxiOa5zPf2A5ZC-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="25" as="sourcePoint" />
+            <mxPoint x="180" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-305" y="60" />
+              <mxPoint x="610" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2PcU3GDxiOa5zPf2A5ZC-3" value="VLAN 153&lt;br&gt;Playground" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2PcU3GDxiOa5zPf2A5ZC-2" vertex="1" connectable="0">
+          <mxGeometry x="-0.2471" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2PcU3GDxiOa5zPf2A5ZC-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.536;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="2PcU3GDxiOa5zPf2A5ZC-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-340" y="173" as="sourcePoint" />
+            <mxPoint x="-197" y="995" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-360" y="360" />
+              <mxPoint x="-360" y="1160" />
+              <mxPoint x="625" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2PcU3GDxiOa5zPf2A5ZC-6" value="&lt;span style=&quot;font-size: 12px; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;VLAN 152 - k8s&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2PcU3GDxiOa5zPf2A5ZC-5" vertex="1" connectable="0">
+          <mxGeometry x="0.7774" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2PcU3GDxiOa5zPf2A5ZC-9" value="VLAN 152" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2PcU3GDxiOa5zPf2A5ZC-5" vertex="1" connectable="0">
+          <mxGeometry x="-0.2893" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2PcU3GDxiOa5zPf2A5ZC-8" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.4;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="pRibz36Krdpza1N9PtJQ-53" target="pRibz36Krdpza1N9PtJQ-56" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-40" y="435" as="sourcePoint" />
+            <mxPoint x="10" y="385" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="487" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
