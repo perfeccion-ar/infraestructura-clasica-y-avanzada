@@ -17,3 +17,4 @@ Si desea colaborar con ideas de arquitectura en el diagrama
 - Guarde "Save as" en la rama *propuesta*
 - Entre a https://gitlab.com/bunker4/infraestructura-clasica/-/merge_requests/new, y genere un nuevo merge request de su rama *propuesta* a master 
 
+
