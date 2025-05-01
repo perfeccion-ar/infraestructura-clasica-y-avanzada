@@ -179,7 +179,7 @@
           <mxGeometry x="-730" y="650" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="U1CDGiFiFmAiaz6NKcIj-13" value="Sopalajo&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;192.168.89.100&lt;/font&gt;&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;" parent="1" vertex="1">
-          <mxGeometry x="-758" y="1010" width="28.000000000000004" height="50" as="geometry" />
+          <mxGeometry x="-758" y="1007" width="28.000000000000004" height="50" as="geometry" />
         </mxCell>
         <mxCell id="U1CDGiFiFmAiaz6NKcIj-14" value="Switch Secretaría" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" parent="1" vertex="1">
           <mxGeometry x="-790" y="810" width="80" height="80" as="geometry" />
