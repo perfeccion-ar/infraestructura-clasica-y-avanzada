@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.14">
   <diagram name="Página-1" id="JTSzyHEqCJwY1uf2J2Gt">
-    <mxGraphModel dx="4144" dy="1255" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2455" dy="855" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -142,8 +142,8 @@
         <mxCell id="cOpwre1l_TY29OTWhIVw-22" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="-750" y="610" width="370" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="cOpwre1l_TY29OTWhIVw-25" value="VM 300 Ainsophic&lt;div&gt;Alma 9.5&lt;div&gt;192.168.89.87&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 29, 29);&quot;&gt;Migrarlo a VLAN 151, y renatearle los puertos desde el mkt&lt;/font&gt;&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
-          <mxGeometry x="110" y="860" width="50" height="40" as="geometry" />
+        <mxCell id="cOpwre1l_TY29OTWhIVw-25" value="VM 300 Ainsophic&lt;div&gt;Alma 9.5&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;10.10.151.4&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="50.75" y="730" width="50" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cOpwre1l_TY29OTWhIVw-26" value="VM 200 k8s-ctrl&lt;div&gt;ubuntu 24.04&lt;div&gt;192.168.89.196&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 29, 29);&quot;&gt;Migrarlo a otra VLAN 152&lt;/font&gt;&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="460" y="715" width="50" height="40" as="geometry" />
