@@ -1,7 +1,9 @@
 #/bin/bash
 
 NAMESPACE="test-environment"
-OUTPUT_FILE="${NAMESPACE}_all_manifests.yaml"
+
+mkdir $NAMESPACE
+OUTPUT_FILE="$NAMESPACE/${NAMESPACE}_all_manifests.yaml"
 
 echo
 echo "DUMPING $NAMESPACE"
