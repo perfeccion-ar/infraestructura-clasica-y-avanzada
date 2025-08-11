@@ -118,6 +118,7 @@ spec:
 
 ---
 # Service LoadBalancer para acceso externo
+# Hecho en base a https://microk8s.io/docs/addon-metallb
 apiVersion: v1
 kind: Service
 metadata:
