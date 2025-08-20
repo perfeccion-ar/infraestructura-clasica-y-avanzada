@@ -1,3 +1,5 @@
+# Ingress, cómo hacer ProxyReverse en un Ngnix Proxy Manager, y mandar el tráfico al Ingress del Kubernetes
+
 ## Requerimientos
 
 En el NGINX Proxy Manager: Configuración de Proxy Host
@@ -26,7 +28,7 @@ proxy_set_header X-Forwarded-Proto $scheme;
 
 ## TODO
 
-Tab SSL: 
+Tab SSL:
 
 - Check "Force SSL"
 - Enable SSL Certificate (Let's Encrypt) ✔

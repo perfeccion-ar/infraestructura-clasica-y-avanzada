@@ -1,0 +1,44 @@
+# Versión "mejorada de nfs-web.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: persistent-volume-nfs-example
+  labels:
+    name: persistent-volume-nfs
+    purpose: testing
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: persistent-volume-deployment
+  namespace: persistent-volume-nfs-example
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nfs-web-con-pvc
+  template:
+    metadata:
+      labels:
+        app: nfs-web-con-pvc
+    spec:
+      containers:
+        - name: nfs-web-con-pvc-containers
+          image: nginx
+          ports:
+            - name: nfs-web-port
+              containerPort: 889
+          volumeMounts:
+            - name: nfs
+              mountPath: /usr/share/nginx/html
+      volumes:
+        - name: nfs
+          persistentVolumeClaim:
+            claimName: nfs
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nfs
+  namespace: persistent-volume-nfs-example
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs
+  resources:
+    requests:
+      # Exige "al menos" 100Mi - el PV tiene 500Mi, así que mostrará 500 Mi
+      storage: 100Mi
