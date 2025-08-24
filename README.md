@@ -2,7 +2,7 @@
 
 ## Wiki
 
-[Temario y apuntes](https://gitlab.com/bunker4/infraestructura-clasica/-/wikis/home) <-------------- Empezar aquí!
+[Temario y apuntes](https://github.com/perfeccion-ar/infraestructura-clasica-y-avanzada/wiki) <-------------- Empezar aquí!
 
 ## Diagrama
 
@@ -19,7 +19,7 @@ Si desea colaborar con ideas de arquitectura en el diagrama
 - Cargue el archivo en draw.io, pero desde este repo
 - Haga los cambios en el diagrama que considere necesarios
 - Guarde "Save as" en la rama *propuesta*
-- Entre a https://gitlab.com/bunker4/infraestructura-clasica/-/merge_requests/new, y genere un nuevo merge request de su rama *propuesta* a master 
+- Entre a https://github.com/perfeccion-ar/infraestructura-clasica-y-avanzada/pulls, y genere un nuevo merge request de su rama *propuesta* a master 
 
 ## Microk8s
 
