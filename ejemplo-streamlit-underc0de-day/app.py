@@ -10,9 +10,6 @@ with st.form(key="my_form"):
     # Campo de número (integer/float)
     edad = st.number_input("Ingresa tu edad:", min_value=0, max_value=120)
 
-    # Destrabar aquellos que quieran la clase de debugging
-    # import ipdb;ipdb.set_trace(context=10)
-
     # Campo booleano (checkbox)
     aceptar_terminos = st.checkbox("Acepto los términos y condiciones")
 
@@ -21,7 +18,12 @@ with st.form(key="my_form"):
 
 # Cuando se presiona el botón, procesa los datos
 if submit_button:
-    if nombre and edad and aceptar_terminos:
+    # Destrabar aquellos que quieran la clase de debugging
+    import ipdb
+
+    ipdb.set_trace(context=10)
+
+    if nombre and edad:
         st.success("¡Formulario enviado con éxito!")
         st.write("Tu nombre es:", nombre)
         st.write("Tu edad es:", edad)
