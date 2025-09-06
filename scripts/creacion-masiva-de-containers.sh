@@ -34,3 +34,11 @@ for container in "${containers[@]}"; do
   
   echo "Finished in $container"
 done
+
+# Asignación masiva de puertos ssh
+# lxc config device add $container port-ssh proxy listen=tcp:0.0.0.0:2201 connect=tcp:127.0.0.1:22
+
+for i in {01..30}
+do
+  lxc config device add padawan$i port-ssh proxy listen=tcp:0.0.0.0:22$i connect=tcp:127.0.0.1:22
+done
