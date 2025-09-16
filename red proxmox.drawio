@@ -65,11 +65,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="pRibz36Krdpza1N9PtJQ-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="pRibz36Krdpza1N9PtJQ-80" target="pRibz36Krdpza1N9PtJQ-54" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="pRibz36Krdpza1N9PtJQ-80" value="Router Movistar" style="sketch=0;points=[[0.5,0,0],[1,0.5,0],[0.5,1,0],[0,0.5,0],[0.145,0.145,0],[0.8555,0.145,0],[0.855,0.8555,0],[0.145,0.855,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=router;fillColor=#FAFAFA;strokeColor=#005073;" parent="1" vertex="1">
-          <mxGeometry x="-620" y="180" width="50" height="50" as="geometry" />
+        <mxCell id="pRibz36Krdpza1N9PtJQ-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="pRibz36Krdpza1N9PtJQ-54" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-570" y="205" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="pRibz36Krdpza1N9PtJQ-83" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.742;entryY=-0.065;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#FF0000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="pRibz36Krdpza1N9PtJQ-86" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -94,8 +93,8 @@
         <mxCell id="pRibz36Krdpza1N9PtJQ-90" value="ether1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-495" y="270" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="pRibz36Krdpza1N9PtJQ-91" value="192.168.1.1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-640" y="255" width="90" height="30" as="geometry" />
+        <mxCell id="pRibz36Krdpza1N9PtJQ-91" value="Entrega desde 192.168.1.1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-680" y="255" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="pRibz36Krdpza1N9PtJQ-100" value="CT 102&amp;nbsp;&lt;div&gt;nginx-proxy-manager&lt;/div&gt;&lt;div&gt;Archlinux&lt;div&gt;10.10.150.7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 67, 0);&quot;&gt;Puerto de administración&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 67, 0);&quot;&gt;81, solo desde adentro,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 67, 0);&quot;&gt;desde VM 105,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 67, 0);&quot;&gt;lubuntu-tools&lt;/font&gt;&lt;/div&gt;" style="points=[[0.03,0.03,0],[0.5,0,0],[0.97,0.03,0],[1,0.4,0],[0.97,0.745,0],[0.5,1,0],[0.03,0.745,0],[0,0.4,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.workstation;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="-44" y="110" width="50" height="40" as="geometry" />
@@ -157,13 +156,13 @@
         <mxCell id="U1CDGiFiFmAiaz6NKcIj-7" value="Campuseimsur&lt;div&gt;Entrega&lt;/div&gt;&lt;div&gt;192.168.44.0&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
           <mxGeometry x="-490" y="710" width="60" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="U1CDGiFiFmAiaz6NKcIj-8" value="Campuseim-buffet" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
-          <mxGeometry x="-780" y="180" width="60" height="50" as="geometry" />
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-8" value="&lt;div&gt;Modem Router&lt;/div&gt;Campuseim-buffet" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="-650" y="170" width="60" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="U1CDGiFiFmAiaz6NKcIj-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pRibz36Krdpza1N9PtJQ-80" target="U1CDGiFiFmAiaz6NKcIj-8" edge="1">
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-700" y="330" as="sourcePoint" />
-            <mxPoint x="-650" y="280" as="targetPoint" />
+            <mxPoint x="-620" y="205" as="sourcePoint" />
+            <mxPoint x="-680" y="170" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="lr2sCLfQ-unKzQ9jzrRq-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="U1CDGiFiFmAiaz6NKcIj-10" target="lr2sCLfQ-unKzQ9jzrRq-30" edge="1">
