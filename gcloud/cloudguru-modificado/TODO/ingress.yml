@@ -1,0 +1,87 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.kubernetes.io/backends: '{"k8s1-6ec05096-default-my-flask-service-5001-11a7c6b0":"HEALTHY"}'
+    ingress.kubernetes.io/forwarding-rule: k8s2-fr-dt561a8a-default-ingress-for-flask-service-yzqi105e
+    ingress.kubernetes.io/target-proxy: k8s2-tp-dt561a8a-default-ingress-for-flask-service-yzqi105e
+    ingress.kubernetes.io/url-map: k8s2-um-dt561a8a-default-ingress-for-flask-service-yzqi105e
+    kubernetes.io/ingress.global-static-ip-name: web-static-ip
+  creationTimestamp: "2025-10-27T18:57:56Z"
+  finalizers:
+  - networking.gke.io/ingress-finalizer-V2
+  generation: 2
+  managedFields:
+  - apiVersion: networking.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:ingress.kubernetes.io/backends: {}
+          f:ingress.kubernetes.io/forwarding-rule: {}
+          f:ingress.kubernetes.io/target-proxy: {}
+          f:ingress.kubernetes.io/url-map: {}
+        f:finalizers:
+          .: {}
+          v:"networking.gke.io/ingress-finalizer-V2": {}
+      f:status:
+        f:loadBalancer:
+          f:ingress: {}
+    manager: glbc
+    operation: Update
+    subresource: status
+    time: "2025-10-27T19:19:45Z"
+  - apiVersion: networking.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:kubernetes.io/ingress.global-static-ip-name: {}
+      f:spec:
+        f:defaultBackend:
+          .: {}
+          f:service:
+            .: {}
+            f:name: {}
+            f:port: {}
+        f:rules: {}
+    manager: unknown
+    operation: Update
+    time: "2025-10-27T19:46:34Z"
+  name: ingress-for-flask-service
+  namespace: default
+  resourceVersion: "1761594394922223012"
+  uid: 9614d1b2-cc96-4907-af5e-da5904fd04a7
+spec:
+  defaultBackend:
+    service:
+      name: my-flask-service
+      port:
+        number: 5001
+  rules:
+  - host: flask.perfeccion.ar
+    http:
+      paths:
+      - backend:
+          service:
+            name: my-flask-service
+            port:
+              number: 5001
+        path: /*
+        pathType: ImplementationSpecific
+  # No se deja el Ingress de Gcloud, algo me falta
+  # - host: nginx.perfeccion.ar
+  #   http:
+  #     paths:
+  #     - backend:
+  #         service:
+  #           name: nginx-service
+  #           port:
+  #             number: 8080
+  #       path: /*
+  #       pathType: ImplementationSpecific
+status:
+  loadBalancer:
+    ingress:
+    - ip: 35.244.234.8

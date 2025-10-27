@@ -1,0 +1,17 @@
+apiVersion: networking.gke.io/v1 # Updated API version
+kind: ManagedCertificate
+metadata:
+  name: managed-cert-flask # Unique name for this certificate
+  namespace: default
+spec:
+  domains:
+    - flask.perfeccion.ar
+---
+apiVersion: networking.gke.io/v1 # Updated API version
+kind: ManagedCertificate
+metadata:
+  name: managed-cert-nginx # Unique name for this certificate
+  namespace: default
+spec:
+  domains:
+    - nginx.perfeccion.ar

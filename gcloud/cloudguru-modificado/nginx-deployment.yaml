@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-nginx
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-nginx
+      run: my-nginx
+  template:
+    metadata:
+      labels:
+        app: my-nginx
+        run: my-nginx
+    spec:
+      containers:
+        - name: my-nginx
+          # image: nginx
+          image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+              protocol: TCP
