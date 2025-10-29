@@ -5,6 +5,13 @@ Basado en
 - https://gitlab.com/cloudguru-public/gke-ingress-with-ssl
 - https://www.youtube.com/watch?v=mOk_VJW-L0c
 
+Tutoriales gratis:
+
+- https://www.skills.google/paths/11/course_sessions/31809837/labs/592696
+- https://www.coursera.org/learn/gcp-fundamentals
+- https://www.coursera.org/learn/google-kubernetes-engine
+- https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-
+
 Pasos realizados
 
 Al menos en Archlinux, asó instalamos Gcloud, necesario para crear infraestructura en la nube
@@ -168,7 +175,7 @@ PING flask.perfeccion.ar (35.244.234.8) 56(84) bytes de datos.
 - Que todo sea mas por código, por ejemplo
   - Crear el Load Balancer, con gcloud o con Terraform
   - Obtener su identificador
-  - Poder armarle la cebecera al ingress.yml, como hace Gcloud, algo así
+  - Poder armarle la cabecera al ingress.yml, como hace Gcloud, algo así
 
 ```yaml
 apiVersion: networking.k8s.io/v1
