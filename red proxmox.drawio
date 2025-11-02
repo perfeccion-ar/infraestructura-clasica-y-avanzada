@@ -156,8 +156,8 @@
         <mxCell id="U1CDGiFiFmAiaz6NKcIj-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Mikrotik&lt;/h1&gt;&lt;p&gt;- eth1 wan: 192.168.1.42&lt;/p&gt;&lt;p&gt;- bridge ether2-5:&lt;/p&gt;&lt;p&gt;&amp;nbsp; - 192.168.89.25/24&lt;/p&gt;&lt;p&gt;VLANs:&amp;nbsp;&lt;/p&gt;&lt;p&gt;- 192.168.150.1/24&lt;/p&gt;&lt;p&gt;- 192.168.151.1/24&lt;/p&gt;&lt;p&gt;Wifi&lt;/p&gt;&lt;p&gt;Campseim-administración&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-637.72" y="340" width="153" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="U1CDGiFiFmAiaz6NKcIj-7" value="Campuseimsur&lt;div&gt;Entrega&lt;/div&gt;&lt;div&gt;192.168.44.0&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
-          <mxGeometry x="-490" y="710" width="60" height="50" as="geometry" />
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-7" value="CISCO Campuseimsur&lt;div&gt;Entrega&lt;/div&gt;&lt;div&gt;192.168.44.0&lt;br&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;ACTUALIZAR a 5G&lt;/font&gt;&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="-490" y="669" width="60" height="50" as="geometry" />
         </mxCell>
         <mxCell id="U1CDGiFiFmAiaz6NKcIj-8" value="&lt;div&gt;Modem Router&lt;/div&gt;Campuseim-buffet" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
           <mxGeometry x="-650" y="170" width="60" height="50" as="geometry" />
@@ -168,14 +168,14 @@
         <mxCell id="lr2sCLfQ-unKzQ9jzrRq-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="pRibz36Krdpza1N9PtJQ-54" target="U1CDGiFiFmAiaz6NKcIj-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1CDGiFiFmAiaz6NKcIj-10" value="Switch Lab&lt;div&gt;Al bridge mkt&lt;/div&gt;&lt;div&gt;192.168.89.0/24&lt;/div&gt;&lt;div&gt;Reiniciarlo si cae&lt;/div&gt;&lt;div&gt;campuseimsan-martin&lt;/div&gt;&lt;div&gt;ACTUALIZAR a 1 Gbit&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" parent="1" vertex="1">
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-10" value="Switch Lab&lt;div&gt;Al bridge mkt&lt;/div&gt;&lt;div&gt;192.168.89.0/24&lt;/div&gt;&lt;div&gt;Reiniciarlo si cae&lt;/div&gt;&lt;div&gt;campuseimsan-martin&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 89, 0);&quot;&gt;ACTUALIZAR&lt;/font&gt; a 1 Gbit&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" parent="1" vertex="1">
           <mxGeometry x="-730" y="650" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="U1CDGiFiFmAiaz6NKcIj-13" value="Sopalajo&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;192.168.89.1&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;VM SRDEP01&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;192.168.89.151&lt;/font&gt;&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;" parent="1" vertex="1">
-          <mxGeometry x="-950" y="825" width="28.000000000000004" height="50" as="geometry" />
+          <mxGeometry x="-950" y="892" width="28.000000000000004" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="U1CDGiFiFmAiaz6NKcIj-14" value="Switch Secretaría&lt;div&gt;Directores&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" parent="1" vertex="1">
-          <mxGeometry x="-810" y="810" width="80" height="80" as="geometry" />
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-14" value="Pequeño Switch&lt;div&gt;&amp;nbsp;Secretaría, y Ramen&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="-810" y="878" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="U1CDGiFiFmAiaz6NKcIj-16" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="U1CDGiFiFmAiaz6NKcIj-10" target="U1CDGiFiFmAiaz6NKcIj-14" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -198,13 +198,23 @@
         <mxCell id="lr2sCLfQ-unKzQ9jzrRq-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="U1CDGiFiFmAiaz6NKcIj-20" target="lr2sCLfQ-unKzQ9jzrRq-24" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-660" y="850" />
-              <mxPoint x="-660" y="1225" />
+              <mxPoint x="-700" y="850" />
+              <mxPoint x="-700" y="1225" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="lr2sCLfQ-unKzQ9jzrRq-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1CDGiFiFmAiaz6NKcIj-20" target="lr2sCLfQ-unKzQ9jzrRq-16" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-660" y="870" />
+              <mxPoint x="-660" y="1300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqo2sSX78X1nYvUAFPiq-4" value="MEDIR" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="lr2sCLfQ-unKzQ9jzrRq-28">
+          <mxGeometry x="0.1236" y="-5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="lr2sCLfQ-unKzQ9jzrRq-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="U1CDGiFiFmAiaz6NKcIj-20" target="lr2sCLfQ-unKzQ9jzrRq-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -214,7 +224,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="U1CDGiFiFmAiaz6NKcIj-20" value="MASTER SWITCH Bedelía&lt;div&gt;ACTUALIZAR 1 Gbit&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" parent="1" vertex="1">
+        <mxCell id="U1CDGiFiFmAiaz6NKcIj-20" value="MASTER SWITCH Bedelía&lt;div&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;ACTUALIZAR&lt;/font&gt; 1 Gbit&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" parent="1" vertex="1">
           <mxGeometry x="-560" y="810" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="U1CDGiFiFmAiaz6NKcIj-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1CDGiFiFmAiaz6NKcIj-10" target="U1CDGiFiFmAiaz6NKcIj-20" edge="1">
@@ -309,7 +319,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="lr2sCLfQ-unKzQ9jzrRq-15" value="Compu Recepción" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;" parent="1" vertex="1">
+        <mxCell id="lr2sCLfQ-unKzQ9jzrRq-15" value="Compu Recepción&lt;div&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;ACTUALIZAR&lt;/font&gt;&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;" parent="1" vertex="1">
           <mxGeometry x="-370" y="1470" width="28.000000000000004" height="50" as="geometry" />
         </mxCell>
         <mxCell id="lr2sCLfQ-unKzQ9jzrRq-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lr2sCLfQ-unKzQ9jzrRq-16" target="lr2sCLfQ-unKzQ9jzrRq-19" edge="1">
@@ -330,8 +340,8 @@
         <mxCell id="lr2sCLfQ-unKzQ9jzrRq-24" value="Campuseim-restaurant&lt;div&gt;Entrega 192.168.0.0&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
           <mxGeometry x="-790" y="1200" width="60" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="lr2sCLfQ-unKzQ9jzrRq-30" value="PC01, PC02,&lt;div&gt;&amp;nbsp;PC03, etc&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;" parent="1" vertex="1">
-          <mxGeometry x="-808" y="660" width="28.000000000000004" height="50" as="geometry" />
+        <mxCell id="lr2sCLfQ-unKzQ9jzrRq-30" value="PC01, PC02,&lt;div&gt;&amp;nbsp;PC03, etc&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;ACTUALIZAR&lt;/font&gt;&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;" parent="1" vertex="1">
+          <mxGeometry x="-841" y="654" width="28.000000000000004" height="50" as="geometry" />
         </mxCell>
         <mxCell id="0uoiUMtouoD1xezjTcYJ-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="0uoiUMtouoD1xezjTcYJ-3" target="0uoiUMtouoD1xezjTcYJ-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
