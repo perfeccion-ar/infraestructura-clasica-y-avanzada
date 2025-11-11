@@ -1,0 +1,1 @@
+Despliegue completo de dos dominios con NGINX Ingress + cert-manager en GKE.

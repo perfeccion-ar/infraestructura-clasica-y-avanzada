@@ -1,0 +1,41 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: host-based-router-ingress
+  annotations:
+    # Optional: Para forzar un HTTP Load Balancer si no usas TLS (HTTPS)
+    kubernetes.io/ingress.allow-http: "true"
+    # --- ADD THESE ANNOTATIONS BACK ---
+    kubernetes.io/ingress.global-static-ip-name: "web-static-ip" # To use your reserved static IP
+    # networking.gke.io/managed-certificates: managed-cert-flask,managed-cert-nginx # To enable HTTPS with your managed certificates
+    # networking.gke.io/v1beta1.FrontendConfig: "http-to-https" # To redirect HTTP to HTTPS
+    # ----------------------------------
+spec:
+  # GKE usará esta anotación para crear un Load Balancer de aplicación
+  ingressClassName: gce
+  rules:
+  - host: nginx.perfeccion.ar # La petición va a este servicio si el host es 'dominio-a.com'
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: nginx-service # El nombre del Service de la App A
+            port:
+              number: 8080
+  - host: flask.perfeccion.ar # La petición va a este servicio si el host es 'dominio-b.com'
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: my-flask-service # El nombre del Service de la App B
+            port:
+              number: 5001
+
+status:
+  loadBalancer:
+    ingress:
+    - ip: 35.244.234.8
