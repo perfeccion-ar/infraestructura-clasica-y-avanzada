@@ -33,13 +33,15 @@ kubectl delete -f "${WORKDIR}/02-clusterissuer.yaml" --ignore-not-found
 # 2. Eliminar cert-manager
 # ===============================================
 echo "🧩 Eliminando cert-manager..."
-if helm list -A | grep -q "cert-manager"; then
-  echo "🌀 Eliminando release Helm cert-manager..."
+if helm status cert-manager -n cert-manager &>/dev/null; then
+  echo "🌀 Desinstalando cert-manager (Helm)..."
   helm uninstall cert-manager -n cert-manager || true
+elif kubectl get ns cert-manager &>/dev/null; then
+  echo "📄 Eliminando manifiesto cert-manager.yaml (modo YAML)..."
+  kubectl delete -f https://github.com/cert-manager/cert-manager/releases/download/v1.15.0/cert-manager.yaml --ignore-not-found
   kubectl delete ns cert-manager --ignore-not-found
 else
-  echo "📄 Eliminando manifiesto cert-manager.yaml (si fue instalado manualmente)..."
-  kubectl delete -f https://github.com/cert-manager/cert-manager/releases/download/${CERT_MANAGER_VERSION}/cert-manager.yaml --ignore-not-found
+  echo "ℹ️  cert-manager no está instalado."
 fi
 
 # ===============================================
