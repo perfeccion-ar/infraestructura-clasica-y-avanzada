@@ -4,6 +4,8 @@
 
 [Temario y apuntes](https://github.com/perfeccion-ar/infraestructura-clasica-y-avanzada/wiki) <-------------- Empezar aquí!
 
+IA que ayuda con todo este contenido: https://notebooklm.google.com/notebook/c085cbe0-3e0c-4237-ba5a-8817ae6635af
+
 ## Diagrama
 
 Nuestro grupo tiene un servidor Proxmox para practicar. Para entender su uso, es menester darle una mirada al archivo proxmox.drawio. Se usa así
