@@ -5,6 +5,7 @@ Versión *corregida* de https://docs.cloud.google.com/kubernetes-engine/docs/qui
 Como ya dijimos en el otro proyecto, para correr este proyecto no hace falta mucha potencia: se puede correr instalando kubectl y gcloud-cli en la compu, o simplemente activando una Shell en [la barra de arriba de ](https://console.cloud.google.com/)
 
 Dinero necesario: hay que tener una tarjeta con unos pocos dolares, activada en la sección de Billing. Lo norma:
+
 - Cuidar los créditos de regalo
 - Utilizar el modo Autopilot, y destruir (terraform destroy) tras probar.
 - Tratar de tener lo más posible por código, cuestión de retomar fácilmente la enseñanza al otro día.
@@ -12,7 +13,7 @@ Dinero necesario: hay que tener una tarjeta con unos pocos dolares, activada en 
 Siguiendo estos consejos, se debería gastar solo unos pocos centavos de dólar. Tener a mano https://cloud.google.com/kubernetes-engine/pricing?hl=es
 
     gcloud auth login
-    gcloud config set project gnuescuelas
+    gcloud config set project escuelita-automation
 
 Activar algunas APIs. Para habilitar APIs, hay que tener el rol "Service Usage Admin IAM role" (roles/serviceusage.serviceUsageAdmin), que contiene el permiso `serviceusage.services.enable permission`
 
@@ -22,7 +23,7 @@ Los siguientes permisos se pueden activar también accediendo a http://console.c
 
 Otorgar roles a mi cuenta de usuario: roles/container.admin, roles/compute.networkAdmin, roles/iam.serviceAccountUser
 
-    gcloud projects add-iam-policy-binding gnuescuelas --member user:sergio@eim.esc.edu.ar --role=roles/gkemulticloud.admin
+    gcloud projects add-iam-policy-binding escuelita-automation --member user:sergio@eim.esc.edu.ar --role=roles/gkemulticloud.admin
 
 Conviene ir **a otra carpeta** que no sea este repositorio, y clonar este proyecto
 
@@ -32,9 +33,8 @@ Este proyecto, obtenido en https://github.com/terraform-google-modules/terraform
 
 Entramos a esta carpeta
 
-    cd terraform-docs-samples/gke/quickstart/autopilot
 
-Adentro hay varias subcarpetas que serán llamadas por nuestro manifiesto en HCL:
+Entramos a la carpeta gke/autopilot/ - alí hay varias subcarpetas que serán llamadas por nuestro manifiesto en HCL:
 
 ```shell
 drwxr-xr-x 2 s s 4096 nov  1 18:23 basic
@@ -83,7 +83,7 @@ A este archivo, le cambiamos esta linea, de INTERNAL a EXTERNAL
 Antes de desplegar, probamos los siguientes comandos
 
     terraform init
-    export GOOGLE_PROJECT="gnuescuelas"  # O, su proyecto
+    export GOOGLE_PROJECT="escuelita-automation"  # O, su proyecto
     terraform plan
 
 Si no tenemos errores, hacemos
@@ -113,7 +113,7 @@ Terraform will perform the following actions:
       + network_firewall_policy_enforcement_order = "AFTER_CLASSIC_FIREWALL"
       + network_id                                = (known after apply)
       + numeric_id                                = (known after apply)
-      + project                                   = "gnuescuelas"
+      + project                                   = "escuelita-automation"
       + routing_mode                              = (known after apply)
       + self_link                                 = (known after apply)
 
@@ -126,12 +126,12 @@ Cuando termine de aplicar, vamos a https://console.cloud.google.com/kubernetes
 Es un buen momento para alimentar nuestro ~/.kube/config, entrando al cluster.
 Allí en la opción **Conectar** obtendremos una línea tipo
 
-    gcloud container clusters get-credentials example-autopilot-cluster --region us-central1 --project gnuescuelas
+    gcloud container clusters get-credentials example-autopilot-cluster --region us-central1 --project escuelita-automation
 
 Nos fijamos si estamos apuntando al cluster correcto...
 
     kubectl config current-context
-    → gke_gnuescuelas_us-central1_example-autopilot-cluster
+    → gke_escuelita-automation_us-central1_example-autopilot-cluster
 
     kubectl get ns
     kubectl get nodes
