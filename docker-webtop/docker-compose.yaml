@@ -1,0 +1,19 @@
+services:
+  desktop-ui:
+    image: docker.sensar.nl/selkie:ubuntumate
+    build: .
+    container_name: desktop_ui
+    privileged: true
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - CUSTOM_USER=$WEB_USER
+      - PASSWORD=$WEB_PASS
+      - TZ=Etc/UTC
+    volumes:
+      - ./config:/config
+      - ./software:/home/ubuntu/software
+    ports:
+      - 3000:3000
+      - 3001:3001
+    shm_size: "1gb"
