@@ -4,7 +4,7 @@ Escritorio completo servido bajo Docker sin necesidad de máquina virtual, X11 F
 
 Usa Mate Desktop como window Manager. Ya tiene VSCode y Chromium Browser.
 
-Proyecto original: https://docs.linuxserver.io/images/docker-webtop/#supported-architectures
+Proyecto original, otros escritorios (i3, KDE, Gnome, XFCE) y versiones más livianas (ej: alpine-mate) en: https://docs.linuxserver.io/images/docker-webtop/#supported-architectures
 
 Traído al [grupo de aprendizaje Bunker 4](https://github.com/perfeccion-ar/infraestructura-clasica-y-avanzada/wiki) por
 
