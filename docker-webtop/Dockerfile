@@ -5,6 +5,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
 RUN set -ex && \
 	apt-get update && \
 	apt-get install -y \
+    chromium-browser \
 		wget \
 		terminator \
     eom && \

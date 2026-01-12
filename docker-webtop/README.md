@@ -2,7 +2,7 @@
 
 Escritorio completo servido bajo Docker sin necesidad de máquina virtual, X11 Forwarding, VNC, NX, etc.
 
-Usa Mate Desktop como window Manager, y ya tiene VSCode.
+Usa Mate Desktop como window Manager. Ya tiene VSCode y Chromium Browser.
 
 Proyecto original: https://docs.linuxserver.io/images/docker-webtop/#supported-architectures
 
@@ -28,4 +28,5 @@ Relacionado: [más trucos para tener un escritorio liviano, remoto](https://gith
 - `docker compose up -d && docker compose logs -f`
 - If you are inside a container, forward ports 3000 and 3001
 - Access it with `https://${SERVER_NAME}:3001`
+
 
