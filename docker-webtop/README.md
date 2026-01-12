@@ -2,6 +2,8 @@
 
 Escritorio completo servido bajo Docker sin necesidad de máquina virtual, X11 Forwarding, VNC, NX, etc.
 
+Usa Mate Desktop como window Manager, y ya tiene VSCode.
+
 Proyecto original: https://docs.linuxserver.io/images/docker-webtop/#supported-architectures
 
 Traido al grupo de aprendizaje Bunker 4 por
