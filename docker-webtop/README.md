@@ -13,7 +13,7 @@ Traído al [grupo de aprendizaje Bunker 4](https://github.com/perfeccion-ar/infr
 
 Ideal para 
 
-- Montarlo en una VPS, o en el Proxmox del aula.
+- Montarlo en una VPS, o en containers del Proxmox del aula.
 - Brindar a los alumnos un escritorio completo de trabajo, sin necesidad que instalen Linux en máquinas limitadas.
 - Acceder a recursos del servidor remoto, ej
   - GPU
