@@ -13,7 +13,8 @@ Traido al grupo de aprendizaje Bunker 4 por
 
 Ideal para 
 
-- Para acceder a recursos pesados de servidor remoto
+- Montarlo en una VPS, o en el Proxmox del aula.
+- Permite acceder a recursos pesados de servidor remoto (GPU, puntos de montaje local, datasets mnuy grandes)
 - Brindar a alumnos un escritorio completo de trabajo, sin necesidad que instalen Linux en máquinas limitadas.
 
 Relacionado: [más trucos para tener un escritorio liviano, remoto](https://github.com/perfeccion-ar/infraestructura-clasica-y-avanzada/wiki/Escritorios-livianos)
