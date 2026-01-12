@@ -6,7 +6,7 @@ Usa Mate Desktop como window Manager. Ya tiene VSCode y Chromium Browser.
 
 Proyecto original: https://docs.linuxserver.io/images/docker-webtop/#supported-architectures
 
-Traido al grupo de aprendizaje Bunker 4 por
+Traído al [grupo de aprendizaje Bunker 4](https://github.com/perfeccion-ar/infraestructura-clasica-y-avanzada/wiki) por
 
 - [Nahuel Palacio](https://github.com/PNahuel5588) - ver video en https://www.youtube.com/watch?v=ZHIgO-OL4xg
 - Anibal Rivero (Sensar.nl)
