@@ -26,9 +26,8 @@ Relacionado: [más trucos para tener un escritorio liviano, remoto](https://gith
 - Copy `env.example` to `.env`
 - Edit the values in `.env`
 - Run `docker compose up -d && docker compose logs -f`
-- Optional, if you are inside a container, forward from router ports 3000 and 3001
 - Access it with 
   - `https://localhost:3001`
   - or `http://localhost:3000`
-
+- Optional, if you are inside a container, forward from router ports 3000 and 3001
 
