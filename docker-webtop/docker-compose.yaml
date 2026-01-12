@@ -5,14 +5,22 @@ services:
     container_name: desktop_ui
     privileged: true
     environment:
+      # Ver más en https://docs.linuxserver.io/images/docker-webtop/#optional-environment-variables
+      - LC_ALL=es_AR.UTF-8
       - PUID=1000
       - PGID=1000
-      - CUSTOM_USER=$WEB_USER
-      - PASSWORD=$WEB_PASS
+      - CUSTOM_USER=$CUSTOM_USER
+      - PASSWORD=$PASSWORD
       - TZ=Etc/UTC
     volumes:
-      - ./config:/config
-      - ./software:/home/ubuntu/software
+      # ~
+      # ~/.config
+      # Desktop
+      # Documents
+      # Downloads
+      # Music
+      # etc
+      - ./home:/home 
     ports:
       - 3000:3000
       - 3001:3001
